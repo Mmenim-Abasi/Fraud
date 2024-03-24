@@ -63,7 +63,7 @@ merc_enc = joblib.load('merchant_encoder.pkl')
 cat_enc = joblib.load('category_encoder.pkl')
 gen_enc = joblib.load('gender_encoder.pkl')
 state_enc = joblib.load('state_encoder.pkl')
-job_enc = joblib.load('job_encoder.pkl')
+# job_enc = joblib.load('job_encoder.pkl')
 
 inp['merchant'] = merc_enc.transform(inp['merchant'])
 inp['category'] = cat_enc.transform(inp['category'])
